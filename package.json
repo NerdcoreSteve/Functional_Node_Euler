@@ -1,0 +1,28 @@
+{
+  "name": "functional_node_euler",
+  "version": "1.0.0",
+  "description": "Wherein I solve project Euler problems in a functional style",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/NerdcoreSteve/Functional_Node_Euler.git"
+  },
+  "keywords": [
+    "node",
+    "functional",
+    "project",
+    "euler"
+  ],
+  "author": "Steve Smith",
+  "license": "AGPL-1.0",
+  "bugs": {
+    "url": "https://github.com/NerdcoreSteve/Functional_Node_Euler/issues"
+  },
+  "homepage": "https://github.com/NerdcoreSteve/Functional_Node_Euler#readme",
+  "dependencies": {
+    "lodash": "^4.6.1"
+  }
+}
