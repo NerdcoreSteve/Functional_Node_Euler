@@ -17,4 +17,18 @@ let fibanaci = _.memoize((index) => {
     }
 })
 
-console.log(fibanaci(6))
+let fibanaci_list = (end_condition) => {
+    let fibanaci_list_recursive = (list, end_condition) => {
+        if(!end_condition(list)) {
+            return fibanaci_list_recursive(list.concat([fibanaci(list.length)]), end_condition)
+        } else {
+            return list
+        }
+    }
+    return fibanaci_list_recursive([], end_condition)
+}
+
+let fibanaci_sum = () =>
+    _.chain(fibanaci_list((list) => _.last(list) > 4000000)).filter((num) => num % 2 === 0).sum().value()
+
+console.log(fibanaci_sum())
